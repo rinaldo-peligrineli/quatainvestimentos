@@ -48,7 +48,7 @@ class UsuariosController extends Controller
 
             $usuario_data['nome_usuario'] = $request->get('nome');
             $usuario_data['email'] = $request->get('email');
-            $usuario_data['senha'] = $request->get('senha');
+            $usuario_data['senha'] = md5($request->get('senha'));
             $usuario_data['status'] = $request->get('status');
             $usuario_data['idade'] = $request->get('idade');
             $usuario_data['saldo'] = $saldo_sql;
@@ -107,17 +107,30 @@ class UsuariosController extends Controller
     public function update(Request $request) {
         $msg = "";
         try {
+            $saldo_sql = str_replace('.', '', $request->get('saldo'));
+            $saldo_sql = str_replace(',', '.', $saldo_sql);
+
             $id = $request->get('id');
             $nome = $request->get('nome');
             $email = $request->get('email');
-            $senha = $request->get('senha');
+            $senha = md5($request->get('senha'));
             $nivel_acesso_id = $request->get('nivel_acesso');
             $status = $request->get('status');
             $idade = $request->get('idade');
-            $saldo = $request->get('saldo');
-            $observacoes = $request->get('observacoes');
+            
+            $observacoes = $request->get('observacao');
             $usuario = Usuario::find($id);
+
             $usuario->nome_usuario = $nome;
+            $usuario->senha = $senha;
+            $usuario->email = $email;
+            $usuario->nivel_acesso_id = $nivel_acesso_id;
+            $usuario->status = $status;
+            $usuario->idade = $idade;
+            $usuario->saldo = $saldo_sql;
+            $usuario->observacoes = $observacoes;
+
+
             $usuario->save();
             
             # Atualiza o arquivo na pasta public/usuarios/yyyy-mm/id_usuario
