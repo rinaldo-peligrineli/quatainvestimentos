@@ -1,14 +1,19 @@
 1-	Baixar o código através do repositório
 https://github.com/rinaldo-peligrineli/quatainvestimentos
 
-2-	Após baixar o projeto descompacta-lo executar os seguintes comandos
-  2.1 Criar o banco de dados  “teste_quata
-  2.2 Php artisan migrate
-  2.3 Php artisan db:seed
+2 - renomear o arquivo .env.example para .env
 
-3 Na pasta do projeto iniciar o servidor do laravel atráves do comando 
-  Php artisan serve
+3 - Alterar a chave DB_DATABASE=laravel para DB_DATABASE=teste_quata
 
-4 Iniciar a pagina de filtro através do link  http:localhost:8000/usuarios/index
+4-	Após baixar o projeto descompacta-lo executar os seguintes comandos
+  
+  4.1 Criar o banco de dados  “teste_quata"
+  4.2 php artisan migrate
+  4.3 php artisan db:seed
+
+5 Na pasta onde o projeto foi descompactado, iniciar o servidor do laravel atráves do comando 
+  php artisan serve
+
+6 Iniciar a pagina de filtro através do link  http:localhost:8000/usuarios/index
 
 Obs: o arquivo dados.txt é gerado na pasta public/usuários/yyyy-dd/id_usuario
