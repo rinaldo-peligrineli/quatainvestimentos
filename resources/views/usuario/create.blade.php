@@ -9,22 +9,12 @@
         crossorigin="anonymous">
     </script>
 
-    <script>
-        
-    </script> 
-    <style>
-       
-        .titulo {
-            background-color:#3c5f41; 
-            color:#FFFFFF;
-        }
-    </style>  
     </head>  
         <body>
         <div class="container">
-        <div class="text-center">
-            <h1>Cadastrar Usuário</h1>
-        </div>
+        <div class="tituloAplicacao">
+            <h3>Inserir Usuário</h3>
+        </div>   
         
         <div class="needs-validation" novalidate>
             <div class="form-group">

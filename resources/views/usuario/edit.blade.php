@@ -10,9 +10,9 @@
 
     <body>
         <div class="container">
-        <div class="text-center">
-            <h1>Editar Usuário</h1>
-        </div>
+        <div class="tituloAplicacao">
+            <h3>Editar Usuário</h3>
+        </div>  
         
         
         <div class="form-group">

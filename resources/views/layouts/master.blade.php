@@ -1,4 +1,5 @@
 <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 <script src="{{ asset('js/jquery.3.6.0.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/functions.js') }}"></script>

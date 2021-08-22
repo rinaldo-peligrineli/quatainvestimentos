@@ -8,9 +8,9 @@
     </script>
     <body>
         <div class="container">
-        <div class="text-center">
-            <h1>Visualizar Usuario</h1>
-        </div>
+        <div class="tituloAplicacao">
+            <h3>Visualisar Usuário</h3>
+        </div>  
             
         <div class="form-group">
             <label for="nome">Nome</label>

@@ -1,25 +1,14 @@
 @extends('layouts.master')
 <!doctype html>
 <head>
-    <style>
-        .titulo {
-            background-color:#3c5f41; 
-            color:#FFFFFF;
-        }
-    </style> 
-    
-    
     <body>
 </head>    
 <html>
     <body>
         <div class="container">
-        <div class="row titulo">
-            <div class="col-sm-6 ">
-                <h3>CRUD Usuários</h3>
-            </div>
-            
-        </div>
+            <div class="tituloAplicacao">
+                <h3>Listar Usuários</h3>
+            </div>   
     
         <div class="container">  
             @if(Session::get('message'))
