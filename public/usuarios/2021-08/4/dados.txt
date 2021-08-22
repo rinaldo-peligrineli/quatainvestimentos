@@ -1,0 +1,5 @@
+id;nome_usuario;emai;senha;status;nivel_acesso;observacoes;data_criacao;data_atualizacao;acao
+4;rinaldo eee;email;senha;0;básico;;20210820;20210822;inserido
+4;rinaldo;email;senha;0;básico;;20210820;20210822;alterado
+4;rinaldo ss;email;senha;0;básico;;20210820;20210822;alterado
+4;rinaldo;email;senha;0;básico;;20210820;20210822;alterado
