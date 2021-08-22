@@ -9,6 +9,6 @@ https://github.com/rinaldo-peligrineli/quatainvestimentos
 3 Na pasta do projeto iniciar o servidor do laravel atráves do comando 
   Php artisan serve
 
-4 Iniciar a pagina de filtro através do link  http:localhost:8000/usuários/index
+4 Iniciar a pagina de filtro através do link  http:localhost:8000/usuarios/index
 
 Obs: o arquivo dados.txt é gerado na pasta public/usuários/yyyy-dd/id_usuario
