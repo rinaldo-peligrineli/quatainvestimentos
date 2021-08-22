@@ -80,7 +80,7 @@ class UsuariosController extends Controller
      */
     public function edit($id) {
         if(!Auth::check()) {
-            return redirect()->route('usuario.index')->with('message', "Para alterar um registro, é necessário esta logado");
+            return redirect()->route('usuario.index')->with('message', "Para alterar um registro, é necessário estar logado");
         } 
         $objUsuario = Usuario::findOrFail($id);
         $objNivelAcesso = NivelAcesso::all();
@@ -158,7 +158,7 @@ class UsuariosController extends Controller
         $msg = "";
         try {
             if(!Auth::check()) {
-                return redirect()->route('usuario.index')->with('message', "Para excluir um registro, é necessário esta logado");
+                return redirect()->route('usuario.index')->with('message', "Para excluir um registro, é necessário estar logado");
             } 
 
             $usuario = Usuario::findOrFail($id);
