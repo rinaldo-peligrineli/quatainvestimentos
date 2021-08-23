@@ -1,10 +1,9 @@
 1-	Baixar o código através do repositório
 https://github.com/rinaldo-peligrineli/quatainvestimentos
 
-
-2-	Após baixar o projeto descompacta-lo executar os seguintes comandos
+2-	Depois de baixar o projeto, descompacta-lo executar os comandos abaixo
   
-  2.1 Criar o banco de dados  “quata"
+  2.1 Criar o banco de dados  “quata" com o charset igual a utf8 e collation igual a utf8_general_ci
   2.2 php artisan migrate
   2.3 php artisan db:seed
 
@@ -13,4 +12,7 @@ https://github.com/rinaldo-peligrineli/quatainvestimentos
 
 6 Iniciar a pagina de filtro através do link  http:localhost:8000/usuarios/index
 
-Obs: o arquivo dados.txt é gerado na pasta public/usuários/yyyy-dd/id_usuario
+obs1: A autenticação do usuario para excluir e alterar esta sendo feita com o auth do proprio laravel
+      utilizando a tabela users, foi criada uma outra tabela de usuarios para este teste, portando, ao 
+      acessar a primeira vez a aplicação, necessario se registrar, utilizando a opção Registrar
+Obs2: o arquivo dados.txt é gerado na pasta public/usuários/yyyy-dd/id_usuario
