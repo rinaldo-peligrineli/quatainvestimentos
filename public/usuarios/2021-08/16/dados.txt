@@ -1,2 +1,0 @@
-id;nome_usuario;emai;senha;status;nivel_acesso;observacoes;data_criacao;data_atualizacao;acao
-16;erer;erere;erere;1;básico;;20210822;20210822;inserido

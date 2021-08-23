@@ -1,4 +1,0 @@
-id;nome_usuario;emai;senha;status;nivel_acesso;observacoes;data_criacao;data_atualizacao;acao
-19;122,00;2323;bcbe3365e6ac95ea2c0343a2395834dd;1;básico;;20210822;20210822;inserido
-19;122,00;2323;be8fe4c12c4e43217c06098a2595a950;1;básico;;20210822;20210822;alteração
-19;rinaldo;2323;236a902719d93498bf0ebc95efc76081;1;básico;;20210822;20210822;alteração

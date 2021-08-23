@@ -1,4 +1,0 @@
-id;nome_usuario;emai;senha;status;nivel_acesso;observacoes;data_criacao;data_atualizacao;acao
-18;323232;rinaldo.peligrineli@gmail.com;2222;1;básico;;20210822;20210822;inserido
-18;323232 teste;rinaldo.peligrineli@gmail.com;2222;1;básico;;20210822;20210822;alteração
-18;323232 teste;rinaldo.peligrineli@gmail.com;2222;1;básico;;20210822;20210822;exclusão
