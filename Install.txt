@@ -14,5 +14,8 @@ https://github.com/rinaldo-peligrineli/quatainvestimentos
 
 obs1: A autenticação do usuario para excluir e alterar esta sendo feita com o auth do proprio laravel
       utilizando a tabela users, foi criada uma outra tabela de usuarios para este teste, portando, ao 
-      acessar a primeira vez a aplicação, necessario se registrar, utilizando a opção Registrar
+      acessar a primeira vez a aplicação, necessário se registrar, utilizando a opção Registrar, na pagina principal
+      do projeto "http:localhost:8000/usuarios/index", o crud foi desenvolvido utilizando a tabela usuarios, pode-se testar
+      a aplicação, primeiro criando um usuário através da opção "Cadastrar Usuario", na pagina principal do projeto
+
 Obs2: o arquivo dados.txt é gerado na pasta public/usuários/yyyy-dd/id_usuario
