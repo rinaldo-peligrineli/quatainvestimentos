@@ -22,5 +22,11 @@ Route::post('/usuarios/store', 'UsuariosController@store')->name('usuario.store'
 Route::get('/usuarios/show/{id}', 'UsuariosController@show')->name('usuario.show');
 Route::get('/usuarios/edit/{id}', 'UsuariosController@edit')->name('usuario.edit');
 Route::post('/usuarios/store', 'UsuariosController@store');
-Route::match(['post', 'get'],'/usuarios/delete/{id}', 'UsuariosController@delete')->name('usuario.delete');
+
+route::group(['middleware' => 'auth'], function() {
+    Route::match(['post', 'get'],'/usuarios/delete/{id}', 'UsuariosController@delete')->name('usuario.delete');
+    Route::get('/usuarios/edit/{id}', 'UsuariosController@edit')->name('usuario.edit');
+
+});
+
 Route::match(['put', 'get'], '/usuarios/update', 'UsuariosController@update')->name('usuario.update');

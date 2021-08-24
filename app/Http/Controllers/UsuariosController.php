@@ -79,9 +79,7 @@ class UsuariosController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id) {
-        if(!Auth::check()) {
-            return redirect()->route('usuario.index')->with('message', "Para alterar um registro, é necessário estar logado");
-        } 
+       
         $objUsuario = Usuario::findOrFail($id);
         $objNivelAcesso = NivelAcesso::all();
         return view('usuario.edit', compact('objUsuario'), compact('objNivelAcesso'));
@@ -157,9 +155,7 @@ class UsuariosController extends Controller
     public function delete($id) {
         $msg = "";
         try {
-            if(!Auth::check()) {
-                return redirect()->route('usuario.index')->with('message', "Para excluir um registro, é necessário estar logado");
-            } 
+            
 
             $usuario = Usuario::findOrFail($id);
             
